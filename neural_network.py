@@ -46,8 +46,6 @@ class model(nn.Module):
 def run_mnist_model(model, training_inputs, test_inputs, training_outputs, test_outputs,
                     test_labels,epochs, nabla, loss, opt, batch_size, info_at, plotting):
     
-    # WRITE ANOTHER FUNCTION FOR POLYNOMIAL CASE, NO PERFORMANCE BENCHING--- THIS IS BC MNIST ACTUALLY GUESSING
-    # INCLUDE TEST_LABELS, WONT HAVE FOR POLY MODEL RUN FUNCTION ---- JUST BC I WANT PERFORMANCE
     training_size = training_inputs.shape[0]
     test_size = test_inputs.shape[0]
     iterations = []
